@@ -1,0 +1,5 @@
+CentOS 7
+wget https://raw.githubusercontent.com/7Calvin/puppet-agent-centos7/main/puppet-agent-centos7.sh ; chmod +x puppet-agent-centos7.sh ; ./puppet-agent-centos7.sh
+----------------------------------------------------------------------------------------------
+Ubuntu 20
+wget https://raw.githubusercontent.com/7Calvin/puppet-agent-centos7/main/puppet-agent-ubuntu.sh ; chmod +x puppet-agent-ubuntu.sh ; ./puppet-agent-ubuntu.sh
