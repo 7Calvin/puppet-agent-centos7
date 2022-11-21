@@ -8,7 +8,7 @@ yum install puppet-agent -y
 
 echo "Configurando a instalacao....."
 
-cat <<EOF >> /etc/tmp.conf
+cat <<EOF >> /etc/puppetlabs/puppet/puppet.conf
 [agent]
     server = foreman.calvin.local
     certname = $HOSTNAME
