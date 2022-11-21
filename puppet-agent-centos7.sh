@@ -19,8 +19,15 @@ cat <<EOF >> /etc/puppetlabs/puppet/puppet.conf
     report = true
 EOF
 
+echo "Configurando arquivo HOSTS......"
+
+cat <<EOF >> /etc/hosts
+192.168.1.15 foreman.calvin.local
+EOF
+
 sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
 service puppet restart
 /opt/puppetlabs/bin/puppet agent -t
+
 
 echo "Finalizado a instalacao"
